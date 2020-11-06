@@ -1,0 +1,95 @@
+
+@font-face{
+    font-family: Raleway;
+    src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+*{
+    font-family: Raleway, Arial, serif;
+}
+
+/*MENU*/
+
+.menu{
+    list-style: none;
+    margin-right: 0px;
+    padding-top: 20px;
+    
+}
+.menu li{
+    display: inline;
+    margin-right: 40px;
+}
+.menu a{
+    text-decoration: none;
+    color: #0065fc;
+}
+
+
+/*HEADER*/
+
+.header{
+ margin: 0;
+ padding: 0;
+}
+.header h1{
+    font-size: 1em;
+   
+}
+.header h2{
+    font-size: 0.8em;
+}
+
+.header p{
+    font-size: 0.7em;
+}
+
+.entete{
+    display: flex;
+    justify-content: space-between;
+}
+.filtres{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-right: 40px;
+}
+.filtres li{
+    display: inline;
+    margin-right: 40px;
+}
+
+/*HEBERGEMENTS*/
+
+.hebergements{
+    background-color: #f2f2f2;
+    width: 70%;
+    padding: 30px;
+}
+
+.hebergements h1{
+    font-size: 1em;
+}
+
+.hebergements h2{
+    font-size: 0.8em;
+}
+.hebergements p{
+    font-size: 0.7em;
+}
+.hebergements img{
+    width: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+.onglet{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vignette{
+    padding: 2px;
+    margin: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+}

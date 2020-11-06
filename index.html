@@ -6,17 +6,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="images/Reservia.svg" alt="Logo Reservia" />
-        <ul>
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
-            <li><a href="#">S'inscire</a></li>
-        </ul>
+    <header class="header">
+        <div class="entete">
+            <img src="images/Reservia.svg" alt="Logo Reservia" id="logo"/>
+             <ul class="menu">
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+                <li><a href="#">S'inscire</a></li>
+            </ul>
+        </div>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <h2>Filtres</h2>
-        <ul>
+        <ul class="filtres">
             <li>Économique</li>
             <li>Familial</li>
             <li>Romantique</li>
@@ -27,35 +29,37 @@
     <article>
         <div class="hebergements">
             <h1>Hébergements à Marseille</h1>
-            <div>
-                <img src="images/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
-                <h2>Auberge la Cannebière</h2>
-                <p>Nuit à partir de <b>25€</b></p>
-            </div>
-            <div>
-                <img src="images/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                <h2>Hôtel du port</h2>
-                <p>Nuit à partir de <b>52€</b></p>
-            </div>
-            <div>
-                <img src="images/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
-                <h2>Hôtel Les mouettes</h2>
-                <p>Nuit à partir de <b>76€</b></p>
-            </div>
-            <div>
-                <img src="images/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
-                <h2>Hôtel de la mer</h2>
-                <p>Nuit à partir de <b>46€</b></p>
-            </div>
-            <div>
-                <img src="images/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
-                <h2>Auberge Le Panier</h2>
-                <p>Nuit à partir de <b>23€</b></p>
-            </div>
-            <div>
-                <img src="images/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez amina">
-                <h2>Hôtel chez Amina</h2>
-                <p>Nuit à partir de <b>96€</b></p>
+            <div class="onglet">
+                <div class="vignette">
+                    <img src="images/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+                    <h2>Auberge la Cannebière</h2>
+                    <p>Nuit à partir de <b>25€</b></p>
+                </div>
+                <div class="vignette">
+                    <img src="images/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                    <h2>Hôtel du port</h2>
+                    <p>Nuit à partir de <b>52€</b></p>
+                </div>
+                <div class="vignette">
+                    <img src="images/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+                    <h2>Hôtel Les mouettes</h2>
+                    <p>Nuit à partir de <b>76€</b></p>
+                </div>
+                <div class="vignette">
+                    <img src="images/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                    <h2>Hôtel de la mer</h2>
+                    <p>Nuit à partir de <b>46€</b></p>
+                </div>
+                <div class="vignette">
+                    <img src="images/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
+                    <h2>Auberge Le Panier</h2>
+                    <p>Nuit à partir de <b>23€</b></p>
+                </div>
+                <div class="vignette">
+                    <img src="images/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez amina">
+                    <h2>Hôtel chez Amina</h2>
+                    <p>Nuit à partir de <b>96€</b></p>
+                </div>
             </div>
         </div>
         <div class="populaires">
