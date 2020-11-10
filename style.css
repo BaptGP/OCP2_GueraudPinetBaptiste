@@ -1,11 +1,23 @@
-
+/*POLICE*/
 @font-face{
     font-family: Raleway;
     src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 }
+@font-face{
+    font-family: Raleway-Bold;
+    src: url('font/Raleway/static/Raleway-Bold.ttf') format('truetype');
+}
 
 *{
     font-family: Raleway, Arial, serif;
+    margin: 10px 20px;
+}
+h1{
+    font-family: Raleway-Bold, Arial, serif;
+}
+b{
+    font-family: Raleway-Bold, Arial, serif;
+    margin: 0;
 }
 
 /*MENU*/
@@ -29,8 +41,11 @@
 /*HEADER*/
 
 .header{
- margin: 0;
+ margin: 0 25px;
  padding: 0;
+}
+#logo{
+    margin: 0;
 }
 .header h1{
     font-size: 1em;
@@ -47,49 +62,99 @@
 .entete{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 .filtres{
     list-style: none;
     margin: 0;
     padding: 0;
-    display: inline;
+    display: inline-block;
     margin-right: 40px;
+    margin-left: 40px;
+    font-size: 0.8em;
 }
 .filtres li{
     display: inline;
     margin-right: 40px;
 }
 
+
+#filtre{
+    display: inline-block;
+}
 /*HEBERGEMENTS*/
 
 .hebergements{
     background-color: #f2f2f2;
-    width: 70%;
-    padding: 30px;
+    border-radius: 20px;
+    width: 55%;
+    padding: 20px;
 }
 
 .hebergements h1{
     font-size: 1em;
+    margin-left: 120px;
+    
 }
 
 .hebergements h2{
     font-size: 0.8em;
+    margin: 0px 10px 5px 10px;
 }
 .hebergements p{
     font-size: 0.7em;
+    margin: 0 10px;
 }
 .hebergements img{
-    width: 150px;
+    width: 200px;
     border-radius: 10px 10px 0 0;
+    height: 100px;
+    margin: 5px;
 }
 
 .onglet{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .vignette{
-    padding: 2px;
-    margin: 20px;
+    padding: 0px;
+    margin: 20px 30px 20px 30px;
     background-color: #FFF;
     border-radius: 10px;
+    box-shadow: 0px 0px 30px grey;
+}
+
+
+.populaires{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 40%;
+    padding: 30px;
+}
+.populaires h1{
+    font-size: 1em;
+    margin-left: 20px;
+}
+.populaires h2{
+    font-size: 0.8em;
+}
+.populaires p{
+    font-size: 0.7em;
+}
+.populaires img{
+    width: 85px;
+    border-radius: 10px 0px 0 10px;
+    height: 90px;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.footer li{
+    list-style: none;
 }
