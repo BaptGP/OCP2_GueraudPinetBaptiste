@@ -64,24 +64,34 @@ b{
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
+
+/*FILTRES*/
+
 .filtres{
     list-style: none;
-    margin: 0;
     padding: 0;
-    display: inline-block;
+    display: flex;
     margin-right: 40px;
-    margin-left: 40px;
+    margin-left: 0px;
     font-size: 0.8em;
 }
-.filtres li{
-    display: inline;
-    margin-right: 40px;
+.liste{
+    display: flex;
+    padding: 0px;
+    border-width: 2px;
+    border-color: #f2f2f2;
+    border-style: solid;
+    border-radius: 20px;
 }
 
 
 #filtre{
     display: inline-block;
+    margin-right: 0;
 }
+
+
 /*HEBERGEMENTS*/
 
 .hebergements{
@@ -125,6 +135,8 @@ b{
     box-shadow: 0px 0px 30px grey;
 }
 
+/*POPULAIRE*/
+
 
 .populaires{
     background-color: #f2f2f2;
@@ -147,6 +159,8 @@ b{
     border-radius: 10px 0px 0 10px;
     height: 90px;
 }
+
+
 
 /*FOOTER*/
 .footer{
