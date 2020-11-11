@@ -74,6 +74,7 @@ b{
     display: flex;
     margin-right: 40px;
     margin-left: 0px;
+    margin-top: 0;
     font-size: 0.8em;
 }
 .liste{
@@ -84,13 +85,14 @@ b{
     border-style: solid;
     border-radius: 20px;
 }
-
-
 #filtre{
-    display: inline-block;
-    margin-right: 0;
+    display: flex;
 }
-
+#filtretitle{
+    padding: 0;
+    margin-top: 21px;
+    margin-left: 0;
+}
 
 /*HEBERGEMENTS*/
 
