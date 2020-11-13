@@ -94,6 +94,9 @@ b{
     margin-left: 0;
 }
 
+.info{
+    display: flex;
+}
 /*HEBERGEMENTS*/
 
 .hebergements{
