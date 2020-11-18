@@ -231,10 +231,13 @@ b{
 }
 .populaires h1{
     font-size: 1.3em;
-    margin-left: 70px;
     margin-bottom: 0;
-    width: 100%;
+    width: 70%;
     margin-top: 0;
+    display: inline;
+}
+.populaires .fa-chart-line{
+    font-size: 25px;
 }
 .populaires h2{
     font-size: 0.8em;
@@ -270,25 +273,21 @@ b{
     box-shadow: 0px 0px 30px grey;
 }
 
-/*FOOTER*/
-.footer{
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-}
-.footer li{
-    list-style: none;
-}
-
 /*ACTIVITES*/
 .activites{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 600px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 30px;
+    
 }
-.activites h1{
+.titreact{
     width: 100%;
+    margin-left: 25px;
+    margin-bottom: 35px;
 }
 .activites h2{
     font-size: 0.8em;
@@ -324,6 +323,7 @@ b{
     height: 200px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
+    margin-top: 100px;
 }
 .iles img{
     width: 100%;
@@ -357,9 +357,25 @@ b{
     height: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
+    margin-top: 100px;
 }
 .longchamp img{
     width: 100%;
     height: 80%;
     border-radius: 20px 20px 0 0;
 }
+
+
+
+
+/*FOOTER*/
+.footer{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.footer li{
+    list-style: none;
+}
+
