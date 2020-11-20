@@ -1,3 +1,9 @@
+/* BODY */
+body{
+    margin: 0;
+    overflow-x:hidden;
+}
+
 /*POLICE*/
 @font-face{
     font-family: Raleway;
@@ -43,8 +49,9 @@ b{
 
 .header{
  margin: 0 25px;
+ margin-right: 0;
  padding: 0;
- width: 100%;
+
 }
 #logo{
     margin: 0;
@@ -73,15 +80,19 @@ b{
     height: 40px;
     width: 200px;
     margin: 0;
-    padding: 0;
+    padding: 6px;
     border-color: #f2f2f2;
     border-style: solid;
+    position: relative;
+    left: -4px;
 }
 .rechercher .fas{
     background-color: #f2f2f2;
     padding: 12px;
     border-radius: 10px 0 0 10px;
     margin-right: 0;
+    position: relative;
+    top: 1px;
 }
 .rechercher button{
     height: 40px;
@@ -91,6 +102,8 @@ b{
     margin: 0;
     padding: 10px;
     border-style: none;
+    position: relative;
+    left: -8px;
 }
 
 .flexheb{
@@ -121,8 +134,18 @@ b{
     border-style: solid;
     border-radius: 20px;
     margin-left: 20px;
-    padding: 10px;
 }
+.liste:hover{
+    background-color: #f2f2f2;
+}
+
+.liste span
+{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 33px;
+}
+
 #filtre{
     display: flex;
 }
@@ -134,38 +157,51 @@ b{
 
 .info{
     display: flex;
+    margin-top: 20px;
 }
 .info .fas{
     color: #0065fc;
-    padding: 9px 14px 8px 14px;
     border: 1px solid #f2f2f2;
     border-radius: 50%;
-    font-size: 12px;
+    font-size: 10px;
+    width: 17px;
+    height: 14px;
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 9px;
+}
+.info p{
+    margin-left: 10px;
 }
 .filtres .fas{
     color: #0065FC;
-    padding: 7.5px;
+    width: 34px;
+    padding-top: 10px;
     border-radius: 50%;
     background-color: #DEEBFF;
     text-align: center;
-    margin-left: -15px;
+    margin-left: -1px;
 }
 /*HEBERGEMENTS*/
 
 .hebergements{
     background-color: #f2f2f2;
     border-radius: 20px;
-    width: 55%;
-    padding: 20px;
+    width: 70%;
+    padding: 30px;
     margin: 20px;
+    margin-right: 2%;
 }
-
+.hebergements a{
+    color: black;
+    text-decoration: none;
+}
 .hebergements h1{
     font-size: 1.3em;
-    margin-left: 70px;
-    margin-top: 0;
+    margin-left: 180px;
     margin-bottom: 0;
-    
+    margin-top: 0;
+    width: 100%;
 }
 
 .hebergements h2{
@@ -178,12 +214,11 @@ b{
 }
 .hebergements h3{
     font-size: 1em;
-    margin-left: 90px;
-    margin-top: 70px;
+    margin-left: 190px;
 }
 .vignette{
     padding: 0px;
-    margin: 20px 30px 20px 30px;
+    margin: 50px 60px 30px 30px;
     width: 250px;
     background-color: #FFF;
     border-radius: 10px;
@@ -191,12 +226,18 @@ b{
 }
 
 .vignette img{
-    width: 96%;
+    background-size: cover;
     height: 120px;
     border-radius: 10px 10px 0 0;
     margin: 5px;
 }
-
+.image{
+    background-size: cover;
+    width: 240px;
+    height: 120px;
+    margin: 5px;
+    border-radius: 10px 10px 0 0;
+}
 .onglet{
     display: flex;
     flex-wrap: wrap;
@@ -223,8 +264,10 @@ b{
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 30px;
-    width: 35%;
+    width: 20%;
     margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -232,7 +275,7 @@ b{
 .populaires h1{
     font-size: 1.3em;
     margin-bottom: 0;
-    width: 70%;
+    width: 90%;
     margin-top: 0;
     display: inline;
 }
@@ -262,6 +305,15 @@ b{
     height: 150px;
     margin: 5px;
 }
+.imagepop{
+    background-size: cover;
+    float: left;
+    border-radius: 10px 0px 0 10px;
+    width: 40%;
+    height: 150px;
+    margin: 5px;
+
+}
 .vignettepop{
     width: 480px;
     height: 160px;
@@ -272,7 +324,12 @@ b{
     border-radius: 10px;
     box-shadow: 0px 0px 30px grey;
 }
-
+#pop2 h2{
+    text-align: left;
+}
+#pop2 .star{
+    margin-top: 55px;
+}
 /*ACTIVITES*/
 .activites{
     display: flex;
@@ -300,7 +357,8 @@ b{
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
 }
-.port img{
+.portimg{
+    background-size: cover;
     width: 100%;
     height: 90%;
     border-radius: 20px 20px 0 0;
@@ -312,7 +370,8 @@ b{
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
 }
-.fort img{
+.fortimg{
+    background-size: cover;
     width: 100%;
     height: 80%;
     border-radius: 20px 20px 0 0;
@@ -325,7 +384,8 @@ b{
     box-shadow: 0px 0px 30px grey;
     margin-top: 100px;
 }
-.iles img{
+.ilesimg{
+    background-size: cover;
     width: 100%;
     height: 80%;
     border-radius: 20px 20px 0 0;
@@ -336,7 +396,8 @@ b{
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey; 
 }
-.parc img{
+.parcimg{
+    background-size: cover;
     width: 100%;
     height: 90%;
     border-radius: 20px 20px 0 0;
@@ -347,7 +408,8 @@ b{
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
 }
-.dame img{
+.dameimg{
+    background-size: cover;
     width: 100%;
     height: 80%;
     border-radius: 20px 20px 0 0;
@@ -359,7 +421,8 @@ b{
     box-shadow: 0px 0px 30px grey;
     margin-top: 100px;
 }
-.longchamp img{
+.longchampimg{
+    background-size: cover;
     width: 100%;
     height: 80%;
     border-radius: 20px 20px 0 0;
@@ -377,5 +440,23 @@ b{
 }
 .footer li{
     list-style: none;
+    padding-bottom: 10px;
+}
+.footer ul{
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+#footer1{
+    width: 33%;
+}
+#footer2{
+    width: 33%;
+}
+#footer3{
+    width: 33%;
+}
+.footer h3{
+    padding-left: 30px;
 }
 
