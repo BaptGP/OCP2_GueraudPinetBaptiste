@@ -189,7 +189,6 @@ b{
     width: 70%;
     padding: 30px;
     margin: 20px;
-    margin-right: 2%;
 }
 .hebergements a{
     color: black;
@@ -205,18 +204,18 @@ b{
 
 .hebergements h2{
     font-size: 0.8em;
-    margin: 0px 10px 5px 10px;
+    margin: 5px 0 5px 5px;
 }
 .hebergements p{
     font-size: 0.7em;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .hebergements h3{
     font-size: 1em;
     margin-left: 190px;
 }
 .vignette{
-    padding: 0px;
+    padding: 5px;
     margin: 50px 60px 30px 30px;
     width: 250px;
     background-color: #FFF;
@@ -225,21 +224,15 @@ b{
 }
 
 .vignette img{
-    background-size: cover;
+    object-fit: none;
     height: 120px;
     border-radius: 10px 10px 0 0;
-    margin: 5px;
 }
-.image{
-    background-size: cover;
-    width: 96%;
-    height: 120px;
-    margin: 5px;
-    border-radius: 10px 10px 0 0;
-}
+
 .onglet{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -247,9 +240,8 @@ b{
 
 /*ETOILE*/
 .star{
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 5px;
-    margin-bottom: 5px;
     color:#0065FC;
 }
 .star .grey{
@@ -277,7 +269,6 @@ b{
     margin-bottom: 0;
     width: 90%;
     margin-top: 0;
-    display: inline;
 }
 .populaires .fa-chart-line{
     font-size: 25px;
@@ -288,14 +279,13 @@ b{
 }
 .populaires h2{
     font-size: 0.8em;
-    text-align: center;
 }
 .populaires .star{
     margin-left: 0;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 .textpop{
-    margin-top: 5px;
+    width: 50%;
     float: left;
     margin-left: 10px;
 }
@@ -303,36 +293,28 @@ b{
     font-size: 0.7em;
 }
 .populaires img{
-    float: left;
+    object-fit: none;
     border-radius: 10px 0px 0 10px;
     width: 40%;
-    height: 150px;
-    margin: 5px;
-}
-.imagepop{
-    background-size: cover;
+    height: 160px;
     float: left;
-    border-radius: 10px 0px 0 10px;
-    width: 40%;
-    height: 150px;
-    margin: 5px;
-
 }
 .vignettepop{
     width: 480px;
     height: 160px;
     background-color: #FFF;
-    padding: 0;
+    padding: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 30px grey;
 }
+
 #pop2 h2{
     text-align: left;
 }
 #pop2 .star{
-    margin-top: 55px;
+    margin-top: 65px;
 }
 /*ACTIVITES*/
 .activites{
@@ -364,8 +346,8 @@ b{
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
 }
-.portimg{
-    background-size: cover;
+.port img{
+    object-fit: cover;
     width: 100%;
     height: 90%;
     border-radius: 20px 20px 0 0;
@@ -377,8 +359,8 @@ b{
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
 }
-.fortimg{
-    background-size: cover;
+.fort img{
+    object-fit: none;
     width: 100%;
     height: 80%;
     border-radius: 20px 20px 0 0;
@@ -391,8 +373,8 @@ b{
     box-shadow: 0px 0px 30px grey;
     margin-top: 100px;
 }
-.ilesimg{
-    background-size: cover;
+.iles img{
+    object-fit: none;
     width: 100%;
     height: 80%;
     border-radius: 20px 20px 0 0;
@@ -403,8 +385,8 @@ b{
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey; 
 }
-.parcimg{
-    background-size: cover;
+.parc img{
+    object-fit: cover;
     width: 100%;
     height: 90%;
     border-radius: 20px 20px 0 0;
@@ -415,8 +397,8 @@ b{
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
 }
-.dameimg{
-    background-size: cover;
+.dame img{
+    object-fit: none;
     width: 100%;
     height: 80%;
     border-radius: 20px 20px 0 0;
@@ -428,8 +410,8 @@ b{
     box-shadow: 0px 0px 30px grey;
     margin-top: 100px;
 }
-.longchampimg{
-    background-size: cover;
+.longchamp img{
+    object-fit: none;
     width: 100%;
     height: 80%;
     border-radius: 20px 20px 0 0;
@@ -470,7 +452,7 @@ b{
 
 
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1280px)
 {
     .hebergements{
         width: 100%;
@@ -524,3 +506,60 @@ b{
         padding: 5px;
     }
 }
+
+
+@media screen and (max-width: 480px)
+{
+    .flexheb{
+        flex-direction: column-reverse;
+    }
+    .port, .iles, .fort, .parc, .dame, .longchamp {
+        width: 350px;
+        height: 200px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 30px grey;
+        margin: 50px;
+    }
+    .portimg, .ilesimg, .fortimg, .parcimg, .dameimg, .longchampimg{
+        height: 70%;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    #footer1, #footer2, #footer3{
+        width: 100%;
+    }
+    .populaires{
+        width: 90%;
+        border-radius: 0;
+        margin: 0;
+    }
+    .vignettepop{
+        width: 350px;
+    }
+    .populaires h1{
+        width: 90%;
+    }
+    .hebergements{
+        width: 80%;
+        background: none;
+    }
+    .vignette{
+        width: 400px;
+        margin: 10px 0 10px 0;
+    }
+    .vignette img{
+        width: 100%;
+    }
+    .hebergements h1{
+        margin-bottom: 20px;
+    }
+    .hebergements h3{
+        margin-left: 0;
+    }
+    #filtre{
+        display: block;
+    }
+}
+    
