@@ -71,6 +71,7 @@ b{
 .entete{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     margin-bottom: 30px;
 }
 
@@ -92,7 +93,7 @@ b{
     border-radius: 10px 0 0 10px;
     margin-right: 0;
     position: relative;
-    top: 1px;
+    top: 2px;
 }
 .rechercher button{
     height: 40px;
@@ -110,7 +111,7 @@ b{
     display: flex;
     flex-wrap: wrap;
 }
-.rechercher .fa-search{
+#button{
     display: none;
 }
 
@@ -190,7 +191,8 @@ b{
     border-radius: 20px;
     width: 70%;
     padding: 30px;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hebergements a{
     color: black;
@@ -259,12 +261,11 @@ b{
     border-radius: 20px;
     padding: 30px;
     width: 20%;
-    margin: 20px;
-    margin-left: 0;
-    margin-right: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .populaires h1{
     font-size: 1.3em;
@@ -458,14 +459,20 @@ b{
 {
     .hebergements{
         width: 100%;
+        border-radius: 0;
     }
     .hebergements h1{
         margin-left: 0;
     }
     .populaires{
         width: 100%;
-        margin: 20px;
+        margin: 0;
+        border-radius: 0;
+        background-color: white;
        
+    }
+    .vignettepop{
+        margin-right: 15px;
     }
     .populaires h1{
         margin-left: 0;
@@ -539,15 +546,20 @@ b{
         width: 100%;
     }
     .populaires{
-        width: 90%;
+        width: 100%;
         border-radius: 0;
         margin: 0;
+        padding: 0;
     }
     .vignettepop{
         width: 350px;
     }
     .populaires h1{
         width: 90%;
+        margin-top: 15px;
+    }
+    .fa-chart-line{
+        margin-top: 15px;
     }
     .hebergements{
         width: 80%;
