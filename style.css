@@ -44,6 +44,13 @@ b{
 #activite{
     color: black;
 }
+.menumobile{
+    display: none;
+}
+.hebact{
+    display: none;
+
+}
 
 /*HEADER*/
 
@@ -87,7 +94,7 @@ b{
     position: relative;
     left: -4px;
 }
-.rechercher .fas{
+.rechercher .fa-map-marker-alt{
     background-color: #f2f2f2;
     padding: 12px;
     border-radius: 10px 0 0 10px;
@@ -111,6 +118,10 @@ b{
     display: flex;
     flex-wrap: wrap;
 }
+#loupe{
+    display: none;
+}
+
 
 
 
@@ -519,7 +530,7 @@ b{
 @media screen and (max-width: 480px)
 {
     .header{
-        margin-left: 15px;
+        margin: 0;
     }
     .flexheb{
         flex-direction: column-reverse;
@@ -554,8 +565,12 @@ b{
         background-color: #f2f2f2;
     }
     .vignettepop{
-        width: 400px;
+        width: 350px;
         margin-right: 0;
+        border-radius: 20px;
+    }
+    .populaires img{
+        border-radius: 20px 0 0 20px;
     }
     .populaires h1{
         width: 90%;
@@ -570,11 +585,13 @@ b{
         padding: 0;
     }
     .vignette{
-        width: 400px;
+        width: 350px;
         margin: 10px 0 10px 0;
+        border-radius: 20px;
     }
     .vignette img{
         width: 100%;
+        border-radius: 20px 20px 0 0;
     }
     .hebergements h1{
         margin-bottom: 20px;
@@ -598,19 +615,85 @@ b{
     }
     .filtres span{
         margin-top: 5px;
+        margin-left: 6px;
+        margin-right: 12px;
     }
     .rechercher{
-        text-align: center;
+       width: 352px;
+       margin: 30px auto;
     }
     .rechercher input{
-        width: 300px;
+        width: 246px;
         height: 50px;
+        left: -6px;
     }
     .rechercher .fas{
         padding: 17px;
         top: 2px;
     }
+    #recherche{
+        display: none;
+    }
+    #loupe{
+        display: block;
+        padding: 0;
+    }
     .rechercher button{
         height: 50px;
+        padding: 3px;
+        border-radius: 10px;
+        left: -17px;
     }
+    .menupc{
+        display: none;
+    }
+    .menumobile{
+        display: block;
+    }
+    .hebact{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+    }
+    .actmobile{
+        border-bottom: 3px solid #f2f2f2;
+        padding: 15px;
+        width: 50%;
+        text-align: center;
+    }
+    .hebmobile{
+        border-bottom: 3px solid #0065fc;
+        padding: 15px;
+        width: 50%;
+        text-align: center;
+    }
+    .hebact a{
+        color: #0065fc;
+        text-decoration: none;
+    }
+    .menumobile a{
+        text-decoration: none;
+        color: #0065fc;
+    }
+    #logo{
+        margin: 10px 0 0 10px;
+    }
+    .menumobile{
+        margin: 25px 15px 0 0;
+    }
+    .header h1 {
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .header p{
+        margin-left: 10px;
+    }
+    #filtretitle{
+        margin-left: 10px;
+    }
+    .info .fas{
+        margin-left: 10px;
+    }
+
 }

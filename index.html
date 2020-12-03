@@ -14,19 +14,31 @@
         <header class="header">
             <div class="entete">
                 <img src="images/Reservia.svg" alt="Logo Reservia" id="logo"/>
-                <ul class="menu">
-                    <li><a href="#hebergement">Hébergements</a></li>
-                    <li><a href="#activites" id="activite">Activités</a></li>
-                    <li><a href="#"><b>S'inscrire</b></a></li>
-                </ul>
+                <div class="menupc">
+                    <ul class="menu">
+                        <li><a href="#hebergement">Hébergements</a></li>
+                        <li><a href="#activites" id="activite">Activités</a></li>
+                        <li><a href="#"><b>S'inscrire</b></a></li>
+                    </ul>
+                </div>
+                <div class="menumobile">
+                    <span><a href="#"><b>S'inscrire</b></a></span>
+                    
+                </div>
+            </div>
+            <div class="hebact">
+                <span class="hebmobile"><a href="#hebergement">Hébergements</a></span>
+                <span class="actmobile"><a href="#activites">Activités</a></span>
             </div>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <div class="rechercher">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="search" id="site-search" name="site-search" aria-label="Search through site content" placeholder="Marseille, France">
-                <button id="recherche">Recherche</button>
-                <!--<i class="fas fa-search">-->
+                <button>
+                    <span id="recherche">Rechercher</span>
+                    <span id="loupe"><i class="fas fa-search"></i></span>
+                </button>
             </div>
             <div id="filtre">
                 <h2 id="filtretitle">Filtres</h2>
