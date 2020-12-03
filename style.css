@@ -100,7 +100,7 @@ b{
     border-radius: 10px 0 0 10px;
     margin-right: 0;
     position: relative;
-    top: 2px;
+    top: 1px;
 }
 .rechercher button{
     height: 40px;
@@ -629,7 +629,7 @@ b{
     }
     .rechercher .fas{
         padding: 17px;
-        top: 2px;
+        top: 1px;
     }
     #recherche{
         display: none;
@@ -643,6 +643,7 @@ b{
         padding: 3px;
         border-radius: 10px;
         left: -17px;
+        top: 1px;
     }
     .menupc{
         display: none;
