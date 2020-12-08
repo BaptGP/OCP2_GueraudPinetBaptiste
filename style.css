@@ -351,7 +351,7 @@ b{
     text-decoration: none;
 }
 .port{
-    width: 350px;
+    width: 20%;
     height: 600px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
@@ -364,7 +364,7 @@ b{
 }
 
 .fort {
-    width: 350px;
+    width: 20%;
     height: 300px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
@@ -377,7 +377,7 @@ b{
 }
 
 .iles {
-    width: 350px;
+    width: 20%;
     height: 200px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
@@ -390,7 +390,7 @@ b{
     border-radius: 20px 20px 0 0;
 }
 .parc{
-    width: 350px;
+    width: 20%;
     height: 600px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey; 
@@ -402,7 +402,7 @@ b{
     border-radius: 20px 20px 0 0;
 }
 .dame{
-    width: 350px;
+    width: 20%;
     height: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
@@ -414,7 +414,7 @@ b{
     border-radius: 20px 20px 0 0;
 }
 .longchamp{
-    width: 350px;
+    width: 20%;
     height: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px grey;
@@ -473,10 +473,10 @@ b{
     }
     .populaires{
         width: 100%;
-        margin: 0;
+        margin-top: 15px;
         border-radius: 0;
         background-color: white;
-       
+       padding: 0;
     }
     .vignettepop{
         margin-right: 15px;
@@ -504,6 +504,14 @@ b{
         height: 80%;
         object-fit: none;
     }
+    .filtres{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .liste span{
+        margin-left: 12px;
+        margin-right: 20px;
+    }
 }
 
 
@@ -511,6 +519,8 @@ b{
 {
     .filtres{
         flex-wrap: wrap;
+        margin-right: 0;
+        margin-left: 0;
     }
     .liste{
         margin-bottom: 10px;
