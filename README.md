@@ -1,11 +1,11 @@
-**Reservia**
+# Reservia
 
 
 Deuxième projet du parcours développeur web chez OpenClassrooms. L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" (voir l'image ci-dessous).
 
 ![desktop](https://user-images.githubusercontent.com/73936647/110445126-1aff1b80-80be-11eb-8ec6-7dee60404fa0.png)
 
-**Éléments fournis par l'entreprise virtuelle.**
+## Éléments fournis par l'entreprise virtuelle.
 
 * La maquette pour les résolutions ordinateur et téléphone nous est donné.
 * Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
@@ -13,7 +13,7 @@ Deuxième projet du parcours développeur web chez OpenClassrooms. L'objectif es
 * Les couleurs sont : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
 * La police est "Raleway"
 
-**Cahier des charges**
+## Cahier des charges
 
 * L'integration doit se faire en HTML5 & CSS3, sans framework (bootstrap par exemple)
 * Le champ de recherche doit être un champ de saisie, dont le texte peut être édité. La fonctionnalité de recherche ne doit pas être implémenté pour autant.
@@ -28,6 +28,6 @@ Deuxième projet du parcours développeur web chez OpenClassrooms. L'objectif es
 * Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
 
 
-**Voir le site**
+## Voir le site
 
 https://baptgp.github.io/OCP2_GueraudPinetBaptiste/
